@@ -20,6 +20,7 @@ import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete'
 import {GOOGLE_MAPS_API_KEY} from './env.js';
 import SearchBar from './components/SearchBar.jsx';
 import Header from './components/header.jsx';
+import GoButton from './components/goButtom.jsx';
 
 const {width, height} = Dimensions.get('window');
 const ASPECT_RATIO = width / height;
@@ -83,6 +84,7 @@ export default function App(props) {
         />
       )}
       <Header />
+      <GoButton />
     </View>
   );
 }
